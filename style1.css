@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+}
+.card{
+    width: 350px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;}
+.card::before,.card::after{
+    content:"" ;
+    background: linear-gradient(45deg,#fb0094,#0000ff,#00ff00,#ffff00,#ff0000,#fb0094,#0000ff,#00ff00,#ff0000,#fb0094,#ffff00,#00ff00,#0000ff,#fb0094,#0000ff,#00ff00,#ffff00,#ff0000,#fb0094,#0000ff,#00ff00,#ff0000);
+    background-size:400% ;
+width: calc(100% + 4px);
+height: calc(100% + 4px);
+position: absolute;
+top: -2;
+left: -2;
+z-index: -1;
+animation: ani 20s linear infinite;
+}
+
+@keyframes ani {
+    0%{
+        background-position: 0 0;
+    }
+    50%{
+        background-position: 400% 0;
+    }
+    100%{
+        background-position: 0;
+    }
+}
+.card::after{
+    filter: blur(50px);
+}
+.card input::placeholder{
+    color: black;
+}
+.card input{
+    width: 100%;
+    height: 33px;
+    padding: 0 10px;
+    margin: 5px 0;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+.card input:focus{
+border-bottom: 3px solid red;
+}
+.card h2{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+.card button{
+    width: 100px;
+    height: 33px;
+    font-size: 18px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+.card button:hover{
+    background-color: red;
+    color: #fff;
+    border: 3px solid #fff;
+}
