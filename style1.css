@@ -64,13 +64,13 @@ border-bottom: 3px solid red;
 .card h2{
     color: #fff;
     text-transform: uppercase;
-    font-size: 30px;
+    font-size: 29px;
     font-weight: 800;
     margin-bottom: 10px;
 }
 .card button{
     width: 100px;
-    height: 33px;
+    height: 32.5px;
     font-size: 18px;
     font-weight: bolder;
     text-transform: uppercase;
